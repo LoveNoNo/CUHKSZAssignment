@@ -53,10 +53,10 @@ int main(int argc, char *argv[]) {
 		t1 = std::chrono::high_resolution_clock::now();
 	}
 	if(rank == 0){
-        printf("Total = %d, Size local = %d\n\n", total_size,size_local);
-    }else{
-        printf("Thread %d report: Total = %d, Size local = %d\n\n",rank, total_size,size_local);
-    }
+        	printf("Total = %d, Size local = %d\n\n", total_size,size_local);
+    	}else{
+        	printf("Thread %d report: Total = %d, Size local = %d\n\n",rank, total_size,size_local);
+    	}
 	MPI_Barrier(MPI_COMM_WORLD);
 
 	// printf("\nHere 1 !!!!\n\n");
